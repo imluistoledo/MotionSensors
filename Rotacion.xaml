@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SensoresMovimiento.Rotacion">
+    <ContentPage.Content>
+        <StackLayout>
+            <Frame BackgroundColor="#2196F3" Padding="5, 20, 5, 20" CornerRadius="0">
+                <Label Text="Rotación"
+                       HorizontalTextAlignment="Center"
+                       TextColor="White"
+                       FontSize="34"
+                       FontAttributes="Bold"/>
+            </Frame>
+            <Label Text="Práctica por Luis Gerardo Morales"
+                   TextColor="CornflowerBlue"
+                   FontSize="28"
+                   FontAttributes="Bold"
+                   Padding="10, 10, 0, 0"/>
+            <Label Text="Apunta el telefono hacia tu rostro para comenzar a calibrar"
+                   Padding="10, 5, 0, 0"
+                   FontSize="20"
+                   FontAttributes="Bold"/>
+            <Label Text="Consigue estar entre los valores de"
+                   FontSize="20"
+                   FontAttributes="Bold"
+                   HorizontalTextAlignment="Center"/>
+            <Label Text="x = [60, 80]"
+                   FontSize="20"
+                   FontAttributes="Bold"
+                   HorizontalTextAlignment="Center"/>
+            <Label Text="y = [0, 30]"
+                   FontSize="20"
+                   FontAttributes="Bold"
+                   HorizontalTextAlignment="Center"/>
+            <Label Text="z = [0, 20]"
+                   FontSize="20"
+                   FontAttributes="Bold"
+                   HorizontalTextAlignment="Center"/>
+
+            <Grid Padding="30, 20, 30, 30">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                    <ColumnDefinition Width="*"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <!-- Primera columna -->
+                <Label Text="Eje X:"
+                       Grid.Column="0"
+                       Grid.Row="0"
+                       FontSize="22"
+                       FontAttributes="Bold"
+                       TextColor="#f76767"/>
+                <Label Text="Eje Y:"
+                       Grid.Column="0"
+                       Grid.Row="1"
+                       FontSize="22"
+                       FontAttributes="Bold"
+                       TextColor="#6778f7"/>
+                <Label Text="Eje Z:"
+                       Grid.Column="0"
+                       Grid.Row="2"
+                       FontSize="22"
+                       FontAttributes="Bold"
+                       TextColor="#46a551"/>
+                <Button Text="Detener"
+                        Grid.Column="0"
+                        Grid.Row="3"
+                        FontSize="24"
+                        FontAttributes="Bold"
+                        BackgroundColor="#FFFFFF"
+                        TextColor="LightSalmon"
+                        BorderWidth="3"
+                        BorderColor="LightSalmon"
+                        Clicked="btnDetenerCalibracionClicked"/>
+                <!-- Seguna columna -->
+                <Label Text="Valor eje X"
+                       Grid.Column="1"
+                       Grid.Row="0"
+                       FontSize="22"
+                       FontAttributes="Bold"
+                       x:Name="lblEjeX"/>
+                <Label Text="Valor eje Y"
+                       Grid.Column="1"
+                       Grid.Row="1"
+                       FontSize="22"
+                       FontAttributes="Bold"
+                       x:Name="lblEjeY"/>
+                <Label Text="Valor eje Z"
+                       Grid.Column="1"
+                       Grid.Row="2"
+                       FontSize="22"
+                       FontAttributes="Bold"
+                       x:Name="lblEjeZ"/>
+                <Button Text="Calibrar"
+                        Grid.Column="1"
+                        Grid.Row="3"
+                        FontSize="24"
+                        FontAttributes="Bold"
+                        BackgroundColor="#2196F3"
+                        TextColor="#FFFFFF"
+                        Clicked="btnIniciarCalibracionClicked"/>
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

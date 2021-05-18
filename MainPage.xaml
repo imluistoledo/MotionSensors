@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SensoresMovimiento.MainPage">
+
+    <StackLayout Orientation="Vertical">
+        <Frame BackgroundColor="#2196F3" Padding="5, 20, 5, 20" CornerRadius="0">
+            <Label Text="¡Experimenta con sensores de movimiento!"
+                   HorizontalTextAlignment="Center"
+                   TextColor="White"
+                   FontSize="34"
+                   FontAttributes="Bold"/>
+        </Frame>
+        <Label Text="A continuación, elige el sensor que desees conocer"
+               FontSize="22"
+               FontAttributes="Bold"
+               Padding="10"/>
+        <StackLayout Padding="20, 10, 20, 0"
+                     Spacing="20">
+            <Button Text="Acelerometro"
+                    TextColor="CornflowerBlue"
+                    FontSize="24"
+                    FontAttributes="Bold"
+                    BackgroundColor="White"
+                    BorderColor="CornflowerBlue"
+                    BorderWidth="3"
+                    CornerRadius="20"
+                    x:Name="btnAcelerometro"
+                    Clicked="btnNavegarAcelerometroClicked"/>
+            <Button Text="Giroscopio"
+                    TextColor="CornflowerBlue"
+                    FontSize="24"
+                    FontAttributes="Bold"
+                    BackgroundColor="White"
+                    BorderColor="CornflowerBlue"
+                    BorderWidth="3"
+                    CornerRadius="20"
+                    x:Name="btnGiroscopio"
+                    Clicked="btnNavegarGiroscopioClicked"/>
+            <Button Text="Rotacion"
+                    TextColor="CornflowerBlue"
+                    FontSize="24"
+                    FontAttributes="Bold"
+                    BackgroundColor="White"
+                    BorderColor="CornflowerBlue"
+                    BorderWidth="3"
+                    CornerRadius="20"
+                    x:Name="btnRotacion"
+                    Clicked="btnNavegarRotacionClicked"/>
+        </StackLayout>
+    </StackLayout>
+
+</ContentPage>

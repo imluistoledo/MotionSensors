@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SensoresMovimiento.Giroscopio">
+    <ContentPage.Content>
+        <StackLayout>
+            <Frame BackgroundColor="#2196F3" Padding="5, 20, 5, 20" CornerRadius="0">
+                <Label Text="Giroscopio"
+                       HorizontalTextAlignment="Center"
+                       TextColor="White"
+                       FontSize="34"
+                       FontAttributes="Bold"/>
+            </Frame>
+            <Label Text="Práctica por Jesús Antonio Garza"
+                   TextColor="CornflowerBlue"
+                   FontSize="28"
+                   FontAttributes="Bold"
+                   Padding="10, 10, 0, 0"/>
+            <StackLayout Padding="10, 10, 10, 0">
+                <Label Text="Posicion X:"
+                       FontSize="20"
+                       FontAttributes="Bold"/>
+                <Entry x:Name="nombreX"
+                       FontSize="20"
+                       IsReadOnly="True"
+                       Placeholder="velocidad x"/>
+                <Label Text="Posicion Y:"
+                       FontSize="20"
+                       FontAttributes="Bold"
+                       Margin="0, 10, 0, 0"/>
+                <Entry x:Name="nombreY"
+                       FontSize="20"
+                       IsReadOnly="True"
+                       Placeholder="velocidad y"/>
+                <Label Text="Posicion Z:"
+                       FontSize="20"
+                       FontAttributes="Bold"
+                       Margin="0, 10, 0, 0"/>
+                <Entry x:Name="nombreZ"
+                       FontSize="20"
+                       IsReadOnly="True"
+                       Placeholder="velocidad z"/>
+                <Switch x:Name="switchdoble"
+                        HorizontalOptions="EndAndExpand"
+                        Scale="2"
+                        Margin="0, 10, 20, 0"
+                        ThumbColor="CornflowerBlue"
+                        Toggled="switchdoble_Toggled"/>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

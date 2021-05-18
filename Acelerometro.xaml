@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SensoresMovimiento.Acelerometro">
+    <ContentPage.Content>
+        <StackLayout>
+            <Frame BackgroundColor="#2196F3" Padding="5, 20, 5, 20" CornerRadius="0">
+                <Label Text="Acelerómetro"
+                       HorizontalTextAlignment="Center"
+                       TextColor="White"
+                       FontSize="34"
+                       FontAttributes="Bold"/>
+            </Frame>
+            <Label Text="Práctica por Javier Armando Carranza"
+                   TextColor="CornflowerBlue"
+                   FontSize="28"
+                   FontAttributes="Bold"
+                   Padding="10, 10, 0, 0"/>
+            <Label Text="Cuando se detecte un movimiento brusco, se encenderá la linterna"
+                   FontSize="24"
+                   Padding="10, 0, 0, 0"/>
+            <Label Text="Agite el dispositivo para ver el resultado"
+                   FontSize="24"
+                   Padding="10, 0, 0, 0"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
